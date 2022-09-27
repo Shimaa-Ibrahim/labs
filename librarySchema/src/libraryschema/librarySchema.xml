@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="libraryXmlSchema.xsd" 
+     location = "aaaaa " description = "aaaaaaaa ">
+    <librarian></librarian>
+    <librarian></librarian>
+
+    <book title = "aaaaaaaa " ISBN = "123">
+        <auther>aaaaaaaaaaa</auther>
+
+        <preface>aaaaaaaaaaaa</preface>
+
+        <part title = "aaaaaaaa ">
+            <chapter title = "aaaaaaaaaaaa">
+                <section>
+                    <paragraph>aaaaaaaaaaaa</paragraph>
+                </section>
+                
+                <section>
+                    <paragraph>aaaaaaaaaaaa</paragraph>
+                </section>
+                <section>
+                    <paragraph>aaaaaaaaaaaa</paragraph>
+                </section>
+                <summary>aaaaaaaaaaaaaaa</summary>
+
+            </chapter>
+        </part>
+    </book> 
+    
+</library>
