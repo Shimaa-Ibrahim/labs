@@ -1,0 +1,4 @@
+#gradient{
+  -fx-fill: linear-gradient(to bottom, black, white,black);
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller=".DbFXMLController">
+    <stylesheets>
+        <URL value="@dbfxml.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="Uname" contentDisplay="CENTER" focusTraversable="false" layoutX="53.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="USER NAME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="scoreLabel" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="69.0" layoutY="272.0" prefHeight="43.0" prefWidth="92.0" text="250">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="singlePlayer" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="55.0" layoutY="398.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="120.0" style="-fx-background-color: transparent;" text="Single Player">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="305.0" layoutY="91.0" prefHeight="30.0" prefWidth="174.0" text="TOP PLAYERS">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="567.0" layoutY="91.0" prefHeight="30.0" prefWidth="174.0" text="ONLINE PLAYERS">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
