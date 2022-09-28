@@ -1,0 +1,78 @@
+1. Display your MAC address by 2 different ways.
+2. Display the network settings of all active interfaces.
+3. Display the network setting of all interfaces both active inactive.
+4. Bring your interface down.
+5. Configure your network card to have static IP.
+6. Bring your interface up.
+7. Verify your network setting using ifconfig command.
+8. Configure your network card to have dynamic IP using network manager command.
+9. Check using ifconfig then check its configuration file.
+10. Reconfigure your network card using system-config-network utility to have static IP.
+11. Configure your network card to have 3 IPs and check that they are all working using ifconfig
+command.
+12. Change your host name in your global network file.
+
+##########################################################################################################
+
+1. Using the useradd command, add accounts for the following users in your system: user1, user2,
+user3, user4, user5, user6 and user7. Remember to give each user a password.
+2. Using the groupadd command, add the following groups to your system.
+			Group   GID
+			sales    10000
+			hr       10001
+			web      10002
+
+Why should you set GID in this manner instead of allowing the system to set the GID by default?
+3. Using the usermod command to add user1 and user2 to the sales auxiliary group, user3 and
+user4 to the hr auxiliary group. User5 and user6 to web auxiliary group. And add user7 to all
+auxiliary groups
+4. Login as each user and use id command to verify that they are in the appropriate groups. How
+else might you verify this information?
+5. Create a directory called /depts with a sales, hr, and web directory within the /depts directory.
+6. Using the chgrp command, set the group ownership of each directory to the group with the
+matching name
+7. Set the permissions on the /depts directory to 755, and each subdirectory to 770
+
+
+
+8. Set the set-gid bit on each departmental directory
+
+
+9. Use the su command to switch to the user2 account and attempt the following commands:
+touch /depts/sales/user2.txt
+touch /depts/hr/ user2.txt
+touch /depts/web/ user2.txt
+Which of these commands succeeded and which failed? What is the group ownership of the
+files that were created?
+
+
+10. Configure sudoers file to allow user3 and user4 to use /bin/mount and /bin/umount commands,
+while allowing user5 only to use fdisk command.
+
+
+11. Login by user3 and try to unmount /boot.
+
+12. Login by user4 and remount /boot. Also try to view the partition table using fdisk.
+
+13. Create a directory with permissions rwxrwx---, grant a second group (sales) r-x permissions
+
+
+14. create a file on that directory and grant read and write to a second group (sales)
+
+
+15. set the the owning group as the owning group of any newly created file in that directory.
+
+
+16. Grand your colleagues a collective directory called /opt/research, where they can store
+generated research results. Only members of group profs and grads should be able to create new
+files in the directory, and new file should have the following properties:
+	 .the directory should be owned by root
+	 .new files should be group owned by group grads
+	 .group profs should automatically have read/write access to new files
+	 .group interns should automatically have read only access to new files
+	 .other users should not be able to access the directory and its contents at all.
+
+
+
+
+

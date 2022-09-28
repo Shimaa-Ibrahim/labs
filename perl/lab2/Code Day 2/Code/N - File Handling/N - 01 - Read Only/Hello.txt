@@ -1,0 +1,2 @@
+Hello this is "Hello.txt" File.
+Opened by Read-Only Mode.

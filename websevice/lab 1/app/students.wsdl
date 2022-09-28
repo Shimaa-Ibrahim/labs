@@ -1,0 +1,85 @@
+<wsdl:definitions name="StudentService"
+   xmlns="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <wsdl:message name="getStudentRequest">
+    <wsdl:part name="" type="xsd:string"/>
+   </wsdl:message>
+   <wsdl:message name="getStudentResponse">
+    <wsdl:part name="getStudent" type="xsd:string"/>
+   </wsdl:message>
+
+   <wsdl:portType name="Student_PortType">
+    <wsdl:operation name="firstStudent">
+       <wsdl:input message="tns:getStudentRequest"/>
+       <wsdl:output message="tns:getStudentResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="secondStudent">
+       <wsdl:input message="tns:getStudentRequest"/>
+       <wsdl:output message="tns:getStudentResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="thirdStudent">
+       <wsdl:input message="tns:getStudentRequest"/>
+       <wsdl:output message="tns:getStudentResponse"/>
+    </wsdl:operation>
+   </wsdl:portType>
+
+   <wsdl:binding name="Student_Binding" type="tns:Student_PortType">
+   <soap:binding style="rpc"
+    transport="http://schemas.xmlsoap.org/soap/http"/>
+   <wsdl:operation name="firstStudent">
+    <soap:operation soapAction="firstStudent"/>
+    <wsdl:input>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:input>
+    <wsdl:output>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="secondStudent">
+    <soap:operation soapAction="secondStudent"/>
+    <wsdl:input>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:input>
+    <wsdl:output>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="thirdStudent">
+    <soap:operation soapAction="thirdStudent"/>
+    <wsdl:input>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:input>
+    <wsdl:output>
+       <soap:body
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        namespace="urn:examples:Studentservice"
+        use="encoded"/>
+    </wsdl:output>
+   </wsdl:operation>
+   </wsdl:binding>
+
+   <wsdl:service name="Student_Service">
+    <wsdl:documentation>WSDL File for StudentService</wsdl:documentation>
+    <wsdl:port binding="tns:Student_Binding" name="Student_Port">
+       <soap:address
+        location="http://localhost:8000/wsdl"/>
+    </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,12 @@
+/home/shimaa/perl5/lib/perl5/MooseX/Daemonize.pm
+/home/shimaa/perl5/lib/perl5/MooseX/Daemonize/Core.pm
+/home/shimaa/perl5/lib/perl5/MooseX/Daemonize/Pid.pm
+/home/shimaa/perl5/lib/perl5/MooseX/Daemonize/Pid/File.pm
+/home/shimaa/perl5/lib/perl5/MooseX/Daemonize/WithPidFile.pm
+/home/shimaa/perl5/lib/perl5/Test/MooseX/Daemonize.pm
+/home/shimaa/perl5/man/man3/MooseX::Daemonize.3pm
+/home/shimaa/perl5/man/man3/MooseX::Daemonize::Core.3pm
+/home/shimaa/perl5/man/man3/MooseX::Daemonize::Pid.3pm
+/home/shimaa/perl5/man/man3/MooseX::Daemonize::Pid::File.3pm
+/home/shimaa/perl5/man/man3/MooseX::Daemonize::WithPidFile.3pm
+/home/shimaa/perl5/man/man3/Test::MooseX::Daemonize.3pm

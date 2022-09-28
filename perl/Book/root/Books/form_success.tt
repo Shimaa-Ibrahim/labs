@@ -1,0 +1,3 @@
+<h3> Book created </h3>
+<p>BOOK NAME: [% book.name %]</p>
+<p>BOOK AUTHOR: [% book.author %]</p>

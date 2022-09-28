@@ -1,0 +1,18 @@
+<h1> List of books </h1>
+<br/><br/>
+<table>
+    <head>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Author</td>
+        <td>Delete</td>
+    </head>
+    [% FOREACH book IN books %]
+    <tr>
+    <td> [% book.id %] </td>
+    <td> [% book.name %] </td>
+    <td> [% book.author %] </td>
+    <td> <a href="[% c.uri_for(c.controller.action_for('delete'),[book.id]) %]">delete</a> </td>
+    </tr>
+    [% END %]
+</table>

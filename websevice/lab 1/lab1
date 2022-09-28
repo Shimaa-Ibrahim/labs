@@ -1,0 +1,23 @@
+[
+{
+name: "First student",
+age: 27,
+courses: ['arabic', 'math', 'english'],
+married: false
+},
+{
+name: "Second student",
+age: 24,
+courses: ['math', 'english', 'french'],
+married: false
+},
+{
+name: "Third student",
+age: 25,
+courses: ['math', 'english', 'french'],
+married: false
+}
+] 
+https://github.com/vpulim/node-soap#features
+
+https://github.com/ezzye/nodejs_mock_agresso 

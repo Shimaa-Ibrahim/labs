@@ -1,0 +1,30 @@
+1. Check the present value of
+/proc/sys/net/ipv4/icmp_echo_ignore_all
+2. It should be 0, change it to 1 which will prevent other hosts from successfully
+pinging your host while not affecting your ability to ping them.
+3. Try to ping your colleague, let your colleague try to ping your host.
+4. Reboot and try the last step. What happened? Why?
+5. Edit /etc/sysctl.conf and put the following line at the bottom:
+net.ipv4.icmp_echo_ignore_all=1
+6. Execute sysctl –p command.
+7. Check the value of /proc/sys/net/ipv4/icmp_echo_ignore_all.
+###############################################################################################
+1. Use fdisk -l to locate information about the partition sizes.
+2. Use fdisk to add a new logical partition that is 1GB in size.
+3. Did the kernel feel the changes? Display the content of /proc/partitions file? What
+did you notice? How to overcome that?
+4. Make a new ext2 file system on the new logical partition you just created.
+Bonus: Try creating the ext2 filesystem with 2k blocks and one inode per
+every 4k (two blocks) of filesystem.
+5. Create a directory, name it /data.
+6. Add a label to the new filesystem, name it data.
+7. Add a new entry to /etc/fstab for the new filesystem using the label you just
+create.
+8. Mount the new filesystem.
+9. Display your swap size.
+10. Create a swap file of size 512MB.
+11. Add the swap file to the virtual memory of the system.
+12. Display the swap size
+13. Backup /etc directory using tar utility.
+
+

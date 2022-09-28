@@ -1,0 +1,12 @@
+
+<head>
+    <link rel="stylesheet" href="[% '/static/css/main.css' %]">
+</head>
+<div class="topnav">
+  <a class="active" href="[% c.uri_for('list') %]">Home</a>
+  <a href="[% c.uri_for('list') %]">List</a>
+  <a href="[% c.uri_for('form') %]">Create</a>
+  <a href="#about">About</a>
+</div>
+<br/><br?
+[%content%]
